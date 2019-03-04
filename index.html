@@ -1,11 +1,1137 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Redirecting ... </title>
+	<title>fedora.css ~ minimalis css framework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatile" content="IE=edge">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="dist/css/fedora.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/external/external.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<script type="text/javascript">
-		window.location.href = "fedoracss.github.io/v1.1";
-	</script>
+<span class="sidebar-toggle" id="sidebarToggler">
+	<label><i class="fa fa-bars"></i></label>
+</span>
+<div class="sidebar-wrapper">
+<aside class="sidebar" id="sidebar">
+	<ul class="sidebar-menu">
+		<li><a href="#"><i class="fa fa-flag"></i> &nbsp; <label>Getting Started</label></a></li>
+		<li><a href="#install"><i class="fa fa-code"></i> &nbsp; <label>Insallation</label></a></li>
+		<li><a href="#container"><i class="fa fa-window-maximize"></i> &nbsp; <label>Container</label></a></li>
+		<li><a href="#grid"><i class="fa fa-th"></i> &nbsp; <label>Grid</label></a></li>
+		<li><a href="#typo"><i class="fa fa-font"></i> &nbsp; <label>Typography</label></a></li>
+		<li><a href="#button"><i class="fa fa-hand-pointer-o"></i> &nbsp; <label>Button</label></a></li> 
+		<li><a href="#form"><i class="fa fa-check-square-o"></i> &nbsp; <label>Form</label></a></li>
+		<li><a href="#table"><i class="fa fa-table"></i> &nbsp; <label>Table</label></a></li>
+		<li><a href="#list"><i class="fa fa-list"></i> &nbsp; <label>List</label></a></li>
+		<li><a href="#code"><i class="fa fa-code"></i> &nbsp; <label>Code</label></a></li>
+		<li><a href="#utilities"><i class="fa fa-cogs"></i> &nbsp; <label>Utilities</label></a></li>
+	</ul>
+</aside>
+</div>
+<div class="container-full main" id="install">
+	<div class="container full">
+		<header class="container header-page pt-large pb-medium">
+			<div class="grid">
+				<div class="set lg-8">
+					<img src="dist/fedoracss-logo-lg.png" class="logo">
+					<p>Simple, lightweight and responsive CSS Framework</p>
+				</div>
+				<div class="set lg-4">
+					<a href="https://fedoracss.github.io/v1.1/css/fedora.min.css" class="btn primary"><i class="fa fa-download"></i> Download</a><a href="https://github.com/fedoracss/fedoracss.github.io" class="btn success"><i class="fa fa-github"></i> View on Github</a><br>
+					<small>Latest Version : <b>V.1.1</b> | <b><a href="https://fedoracss.github.io/v1.0">V.1.0</a></b></small>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="container full" style="background: #ecf0f1;">
+		<div class="container pt-medium pb-large">
+			<h1><i class="fa fa-code"></i> Installation</h1>
+			<p>Download the latest version and include it to your web page.</p>
+			<code class="code">
+				<span class="tag">&lt;<span class="nametag">link</span> <span class="prop">rel</span>="<span class="value">stylesheet</span>" <span class="prop">href</span>="<span class="value">dist/css/fedora.css</span>" <span class="prop">type</span>="<span class="value">text/css</span>"&gt;</span>
+			</code>
+		</div>
+	</div>
+	<div class="container full" id="container">
+		<div class="container spacer-large">
+			<h1><i class="fa fa-window-maximize"></i> Container</h1>
+			<p>Help you to starting your web layout, <b>Container</b> <code>.container</code> is classes that adds 16px left and right padding to your HTML tag. The default of <b>Container</b> width is <i>80%</i> (on 768px, 992px and more than 1200px) and <i>100%</i> (on less than 768px). You can use additional class of container, <b>full</b> <code>.container.full</code> to create Full Width Container.</p>
+			<div class="grid fit">
+				<div class="set lg-6">
+					<h3>Default Container</h3>
+					<code class="code block">
+						<span class="tag"><span class="nametag">&lt;div</span> <span class="prop">class</span>="<span class="value">container</span>"&gt;</span><br>
+						<span>&nbsp;&nbsp;This is Default Container </span><br>
+						<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+					</code>
+				</div>
+				<div class="set lg-6">
+					<h3>Full Width Container</h3>
+					<code class="code block">
+						<span class="tag"><span class="nametag">&lt;div</span> <span class="prop">class</span>="<span class="value">container full</span>"&gt;</span><br>
+						<span>&nbsp;&nbsp;This is Full Width Container </span><br>
+						<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+					</code>
+				</div>
+			</div>
+			<br>
+			<div class="container bg-primary spacer-small text-white">
+				<center>
+					<p>Default Container (80%).</p>
+				</center>
+			</div>
+			<br>
+			<div class="container full bg-success spacer-small text-white">
+				<center>
+					<p>Full Width Container (100%)</p>
+				</center>
+			</div>
+			<br>
+			<div class="container full bg-success spacer-small text-white">
+				<center>
+					<p>Full Width Container</p>
+					<div class="container bg-primary spacer-small">
+						<p>default container</p>
+					</div>
+					<p>Full Width Container</p>
+				</center>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container full" id="grid">
+		<div class="container spacer-large">
+			<h1><i class='fa fa-th'></i> Grid</h1>
+			<p>12 Column responsive grid view. The columns will re-arrange automatically dependeing screen size. On large screen, it might look inline according to column size and on small screen, it's might look like card stack.</p>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-6 md-8 sm-4</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;50% on large, 66% on medium 33% on small<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-6 md-4 sm-8</span>"&gt;</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;50% on large, 66% on medium 33% on small<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<div class="grid text-white">
+				<div class="set lg-6 md-8 sm-4 spacer-small bg-success"> 50% on large, 66% on medium 33% on small </div>
+				<div class="set lg-6 md-4 sm-8 spacer-small bg-primary"> 50% on large, 33% on medium, 66% on small</div>
+			</div>
+			<br>
+			<h2>Classes</h2>
+			<table class="bg-white stripped bordered">
+				<thead>
+					<tr>
+						<th>Class</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>grid</code></td>
+						<td>Container for responsive grid view</td>
+					</tr>
+					<tr>
+						<td><code>set</code></td>
+						<td>Defines a column and adds 16px padding on right and left.</td>
+					</tr>
+					<tr>
+						<td><code>xl-*</code></td>
+						<td>Defines column on extra large screens (1200px and up).</td>
+					</tr>
+					<tr>
+						<td><code>lg-*</code></td>
+						<td>Defines column on large screen, typical laptops and desktops (992px and up).</td>
+					</tr>
+					<tr>
+						<td><code>md-*</code></td>
+						<td>Defines column on medium screen, typical tablets (768px and up).</td>
+					</tr>
+					<tr>
+						<td><code>sm-*</code></td>
+						<td>Defines column on small screen, typical smartphones (576px and up).</td>
+					</tr>
+					<tr>
+						<td><code>off-xl-*</code>, <code>off-lg-*</code>, <code>off-md-*</code>, <code>	off-sm-*</code></td>
+						<td>Move columns to right with adds left margin to column.</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<h2>Grid</h2>
+			<p>Resize the page to see effect.</p>
+			<div class="grid text-white">
+				<div class="set lg-8 md-4 sm-12 spacer-small bg-success">
+					66% on large screen, 33% on medium screen and 100% on small screen
+				</div>
+				<div class="set lg-4 md-8 sm-12 spacer-small bg-primary">
+					33% on large screen, 66% on medium screen and 100% on small screen
+				</div>
+			</div>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-8 md-4 sm-12</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;66% on large, 33% on medium 100% on small<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-4 md-8 sm-12</span>"&gt;</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;33% on large, 66% on medium 12% on small<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<div class="grid text-white">
+				<div class="set lg-6 spacer-small bg-success">
+					50% on large screen, on medium and small screen automatically 100%
+				</div>
+				<div class="set lg-3 spacer-small bg-primary">
+					25% on large screen, on medium and small screen automatically 100%
+				</div>
+				<div class="set lg-3 spacer-small bg-warning text-dark">
+					25% on large screen, on medium and small screen automatically 100%
+				</div>
+			</div>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-6</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;50% on large <br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-3</span>"&gt;</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;25% on large<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-3</span>"&gt;</span> <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;25% on large<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<h2>Offset</h2>
+			<p>Push the column to the right. When the screen size changes, the offset will change according to the class offset. If in a column there is only 1 class of offset (for example only off-lg-*) then if the screen size changes to medium or lower, the offset will disappear.</p>
+			<p>Resize to see effect.</p>
+			<div class="grid text-white">
+				<div class="set off-lg-8 lg-4 spacer-small bg-primary">
+					33% on large screen and margin left 66%
+				</div>
+			</div>
+			<div class="grid text-white">
+				<div class="set off-lg-4 lg-4 spacer-small bg-success">
+					33% on large screen and offset 33%
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="set lg-4 spacer-small bg-warning">
+					33% on large screen and no offset.
+				</div>
+			</div>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-4 off-lg-8</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;33% on large screen and margin left 66% on large screen<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-4 off-lg-4</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;33% on large screen and margin left 33% on large screen<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-4</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;33% on large screen and no margin left on large screen<br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<h2>Fit Class</h2>
+			<p>When you use grid inside the container, it's looks like below. There's padding on left and right. So, to remove it, use the <b>fit</b> <code>.fit</code> class. <code>.fit</code> class is pull left and right grid padding.
+			</p>
+			<h3>No use <code>fit</code> class</h3>
+			<div class="container full bg-primary text-white">
+				<div class="grid bg-success">
+					<div class="set lg-6">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					<div class="set lg-6">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h3>Use <code>fit</code> class</h3>
+			<div class="container full bg-primary text-white">
+				<div class="grid fit bg-success">
+					<div class="set lg-6">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					<div class="set lg-6">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">container</span>"&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">grid fit</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-6</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ... laborum<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">set lg-6</span>"&gt;</span><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ... laborum<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+		</div>
+	</div>
+	<hr>
+	<div class="container full spacer-large" id="typo">
+		<div class="container">
+		<h1><i class="fa fa-font"></i> Typography</h1>
+		<p>Heading, Formatting and Alignment.</p>
+		<br>
+		<h2>Heading</h2>
+		<div class="container full bg-light pt-2 pb-2 pl-small pr-small">
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">h1</span>&gt;</span> Heading 1 <span class="tag">&lt;/<span class="nametag">h1</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">h2</span>&gt;</span> Heading 2 <span class="tag">&lt;/<span class="nametag">h2</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">h3</span>&gt;</span> Heading 3 <span class="tag">&lt;/<span class="nametag">h3</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">h4</span>&gt;</span> Heading 4 <span class="tag">&lt;/<span class="nametag">h4</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">h5</span>&gt;</span> Heading 5 <span class="tag">&lt;/<span class="nametag">h5</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">h6</span>&gt;</span> Heading 6 <span class="tag">&lt;/<span class="nametag">h6</span>&gt;</span><br>
+		</code>
+		<br>
+		<h2>Alignment</h2>
+		<div class="container full bg-light pt-2 pb-2 pl-small pr-small">
+			<p class="align-left">Text align left</p>
+			<p class="align-center">Text align center</p>
+			<p class="align-right">Text align right</p>
+		</div>
+		<div class="container full bg-light spacer-small pl-small pr-small">
+			<p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">align-left</span>"&gt;</span> Text Align Left <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">align-center</span>"&gt;</span> Text Align Center <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">align-right</span>"&gt;</span> Text Align Right <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">justify</span>"&gt;</span> Lorem ... laborum.<span class="tag">&lt;/<span class="nametag">p</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Text Decoration</h2>
+		<div class="pt-2 pb-2 pl-small pr-small bg-light">
+			<p class="underline">Underlined Text</p>
+			<p class="overline">Overlined Text</p>
+			<p class="line-through">Line Through Text</p>
+			<p class="decor-none">No Text Decoration</p>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">underline</span>"&gt;</span> Underlined Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">overline</span>"&gt;</span> Overlined Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">line-through</span>"&gt;</span> Line Through Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">decor-none</span>"&gt;</span> No Text Decoration <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Text Transform</h2>
+		<div class="pt-2 pb-2 pl-small pr-small bg-light">
+			<p class="upper">Uppercase Text</p>
+			<p class="lower">Lowercase Text</p>
+			<p class="capital">capitalize text</p>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">upper</span>"&gt;</span> Uppercase Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">lower</span>"&gt;</span> Lowercase Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">capital</span>"&gt;</span> Capitalize Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+		</code>
+		<br>
+		<h2>Text Direction</h2>
+		<div class="pt-2 pb-2 pl-small pr-small bg-light">
+			<p>default of text direction is left ro right.</p>
+			<p class="rtl">This text direction is right to left.</p>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">rtl</span>"&gt;</span> Right to Left <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
+		</code>
+	</div>
+</div>
+	<hr>
+	<div class="container full spacer-large" id="button">
+		<div class="container">
+			<h1><i class="fa fa-hand-pointer-o"></i> Button</h1>
+			<p>Block, Sizing and Outline Button.</p>
+			<br>
+			<button class="btn">Default</button><button class="btn primary">Primary</button><button class="btn warning">Warning</button><button class="btn danger">Danger</button><button class="btn success">Success</button>
+			<br><br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary</span>"&gt;</span> Primary <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn warning</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn danger</span>"&gt;</span> Danger <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+			</code>
+			<br>
+			<h2>Block Button</h2>
+			<p>If on other framework <b>Block Button</b> is Full Width Button, in <b>fedoracss</b> block button is button with block display (stuck).</p>
+			<button class="btn block">Default Block</button>
+			<button class="btn primary block">Primary Block</button>
+			<button class="btn warning block">Warning Block</button>
+			<button class="btn danger block">Danger Block</button>
+			<button class="btn success block">Success Block</button><br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn block</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary block</span>"&gt;</span> Primary <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn warning block</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn danger block</span>"&gt;</span> Danger<span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success block</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span>
+			</code>
+			<br>
+			<h2>Full Width Button</h2>
+			<button class="btn full-width">Default Block</button>
+			<button class="btn primary full-width">Primary Block</button>
+			<button class="btn warning full-width">Warning Block</button>
+			<button class="btn danger full-width">Danger Block</button>
+			<button class="btn success full-width">Success Block</button><br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn full-width</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary full-width</span>"&gt;</span> Primary <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn warning full-width</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn danger full-width</span>"&gt;</span> Danger<span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success full-width</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span>
+			</code>
+			<br>
+			<h2>Outline Button</h2>
+			<button class="btn outline">Default Outline</button>
+			<button class="btn primary outline">Primary Outline</button>
+			<button class="btn warning outline">Warning Outline</button>
+			<button class="btn danger outline">Danger Outline</button>
+			<button class="btn success outline">Success Outline</button><br>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn outline</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary outline</span>"&gt;</span> Primary <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn warning outline</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn danger outline</span>"&gt;</span> Danger<span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success outline</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span>
+			</code>
+			<br>
+			<h2>Sizing</h2>
+			<button class="btn primary sm">Small</button><button class="btn primary">Default</button><button class="btn primary lg">Large</button>
+			<br><br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn sm</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">Small</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn lg</span>"&gt;</span> Large <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+			</code>
+		</div>
+	</div>
+	<hr>
+	<div class="container full spacer-large" id="form">
+		<div class="container">
+		<h1><i class="fa fa-check-square-o"></i> Form</h1>
+		<p>Input field and grouping</p>
+		<br>
+		<div class="spacer-small pl-small pr-small bg-light">
+			<h2>Login Panel</h2>
+			<form>
+				<div class="group">
+					<label>Username</label>
+					<input type="text" class="input">
+				</div>
+				<div class="group">
+					<label>Password</label>
+					<input type="password" class="input">
+				</div>
+				<div class="group">
+					<button type="button" class="btn primary"><i class="fa fa-sign-in"></i> Login</button>
+				</div>
+			</form>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">form</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">group</span>"&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">label</span>&gt;</span> Username <span class="tag">&lt;/<span class="nametag">label</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">input</span> <span class="prop">type</span>="<span class="value">text</span>" <span class="prop">class</span>="<span class="value">input</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">group</span>"&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">label</span>&gt;</span> Password <span class="tag">&lt;/<span class="nametag">label</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">input</span> <span class="prop">type</span>="<span class="value">password</span>" <span class="prop">class</span>="<span class="value">input</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">group</span>"&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">type</span>="<span class="value">submit</span>" <span class="prop">class</span>="<span class="value">btn</span>"&gt;</span> Login <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">form</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Basic Input</h2> 
+		<div class="spacer-small pl-small pr-small bg-light">
+			<input type="text" class="input">
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">input</span> <span class="prop">type</span>="<span class="value">text</span>" <span class="prop">class</span>="<span class="value">input</span>"&gt;</span>
+		</code>
+		<br>
+		<h2>Select Input</h2>
+		<div class="spacer-small pl-small pr-small bg-light">
+			<select class="input">
+				<option>List 1</option>
+				<option>List 2</option>
+				<option>List 3</option>
+			</select>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">select</span> <span class="prop">class</span>="<span class="value">input</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">option</span>&gt;</span> List 1 <span class="tag">&lt;/<span class="nametag">option</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">option</span>&gt;</span> List 2 <span class="tag">&lt;/<span class="nametag">option</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">option</span>&gt;</span> List 3 <span class="tag">&lt;/<span class="nametag">option</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">select</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Checkbox</h2>
+		<div class="container full bg-light spacer-small pl-small pr-small">
+			<input type="checkbox" class="checkbox" id="myCheck"><label class="checkbox-label" for="myCheck">Check it</label>
+		</div><br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">input</span> <span class="prop">type</span>="<span class="value">checkbox</span>" <span class="prop">class</span>="<span class="value">checkbox</span>"&gt;</span>
+			<br>
+			<span class="tag">&lt;<span class="nametag">label</span> <span class="prop">class</span>="<span class="value">checkbox-label</span>"&gt;</span> Check it <span class="tag">&lt;/<span class="nametag">label</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Radio Button</h2>
+		<div class="spacer-small pl-small pr-small bg-light">
+			<input type="radio"> Check it
+		</div><br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">input</span> <span class="prop">type</span>="<span class="value">radio</span>"&gt;</span> Check it
+		</code>
+		<br>
+		<h2>Textarea</h2>
+		<div class="spacer-small container full pr-small pl-small bg-light">
+			<textarea class="input" name="textarea"></textarea>
+		</div><br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">textarea</span> <span class="prop">class</span>="<span class="value">input</span>" <span class="prop">name</span>="<span class="value">textarea</span>"&gt;</span> <span class="tag">&lt;/<span class="nametag">textarea</span>&gt;</span>
+		</code>
+	</div>
+</div>
+	<hr>
+	<div class="container full spacer-large" id="table">
+		<div class="container">
+		<h1><i class="fa fa-table"></i> Table</h1>
+		<p>Stripped, Bordered and Basic Table</p>
+		<div class="container full spacer-small pl-small pr-small bg-light">
+			<table>
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>John Doe</td>
+					<td><a href="#">doe.john@email.com</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Steve Jobs</td>
+					<td><a href="#">jobs.steve@email.com</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Herald Dipper</td>
+					<td><a href="#">dip.herald@email.com</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">table</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; # <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Name <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Email <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tbody</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; 1 <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; John Doe <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; doe.john@email.com <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tbody</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
+		</code>
+		<p><b>Always use <code>thead</code> and <code>tbody</code> when make table</b></p>
+		<br>
+		<h2>Stripped Table</h2>
+		<p><code>.stripped</code> class is use to create zebra-striping table.</p>
+		<div class="container full spacer-small pl-small pr-small bg-light">
+			<table class="stripped">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>John Doe</td>
+					<td><a href="#">doe.john@email.com</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Steve Jobs</td>
+					<td><a href="#">jobs.steve@email.com</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Herald Dipper</td>
+					<td><a href="#">dip.herald@email.com</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">table</span> <span class="prop">class</span>="<span class="value">stripped</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; # <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Name <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Email <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tbody</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; 1 <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; John Doe <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; doe.john@email.com <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tbody</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Bordered Table</h2>
+		<p><code>.bordered</code> is use to add outside border to the table.</p>
+		<div class="container full spacer-small pl-small pr-small bg-light">
+			<table class="bordered">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>John Doe</td>
+					<td><a href="#">doe.john@email.com</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Steve Jobs</td>
+					<td><a href="#">jobs.steve@email.com</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Herald Dipper</td>
+					<td><a href="#">dip.herald@email.com</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">table</span> <span class="prop">class</span>="<span class="value">bordered</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; # <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Name <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Email <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tbody</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; 1 <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; John Doe <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; doe.john@email.com <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tbody</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Bordered All Table</h2>
+		<p><code>.bordered-all</code> is use to add outside and inside border to the table.</p>
+		<div class="container full spacer-small pl-small pr-small bg-light">
+			<table class="bordered-all">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>John Doe</td>
+					<td><a href="#">doe.john@email.com</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Steve Jobs</td>
+					<td><a href="#">jobs.steve@email.com</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Herald Dipper</td>
+					<td><a href="#">dip.herald@email.com</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">table</span> <span class="prop">class</span>="<span class="value">bordered-all</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; # <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Name <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Email <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tbody</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; 1 <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; John Doe <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; doe.john@email.com <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tbody</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Borderless Table</h2>
+		<p><code>.bordered</code> is use to remove outside border to the table.</p>
+		<div class="container full spacer-small pl-small pr-small bg-light">
+			<table class="borderless">
+				<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>John Doe</td>
+					<td><a href="#">doe.john@email.com</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Steve Jobs</td>
+					<td><a href="#">jobs.steve@email.com</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Herald Dipper</td>
+					<td><a href="#">dip.herald@email.com</a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">table</span> <span class="prop">class</span>="<span class="value">borderless</span>"&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; # <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Name <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">th</span>&gt; Email <span class="tag">&lt;/<span class="nametag">th</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">thead</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tbody</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; 1 <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; John Doe <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">td</span>&gt; doe.john@email.com <span class="tag">&lt;/<span class="nametag">td</span>&gt;</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tr</span>&gt;</span><br>
+			&nbsp;&nbsp;<span class="tag">&lt;/<span class="nametag">tbody</span>&gt;</span><br>
+			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
+		</code>
+	</div>
+</div>
+	<hr>
+	<div class="container full spacer-large" id="list">
+		<div class="container">
+		<h1><i class="fa fa-list"></i> List</h1>
+		<p>Basic and Inline List.</p>
+		<div class="contaner full spacer-small pl-small pr-small bg-light">
+			<div class="grid">
+				<div class="set lg-6 md-6 sm-12">
+					<ul>
+						<li>List 1</li>
+						<li>List 2</li>
+						<li>List 3</li>
+					</ul>
+				</div>
+				<div class="set lg-6 md-6 sm-12">
+					<ol>
+						<li>List 1</li>
+						<li>List 2</li>
+						<li>List 3</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="grid fit">
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">ul</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 1 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 2 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 3 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					<span class="tag">&lt;/<span class="nametag">ul</span>&gt;</span>
+				</code>
+			</div>
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">ol</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 1 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 2 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 3 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					<span class="tag">&lt;/<span class="nametag">ol</span>&gt;</span>
+				</code>
+			</div>
+		</div>
+		<br>
+		<h2>Inline List</h2>
+		<div class="spacer-small pl-small pr-small bg-light">
+			<div class="grid">
+				<div class="set lg-6 md-6">
+					<ul class="inline">
+						<li>List 1</li>
+						<li>List 2</li>
+						<li>List 3</li>
+					</ul>
+				</div>
+				<div class="set lg-6 md-6">
+					<ol class="inline">
+						<li>List 1</li>
+						<li>List 2</li>
+						<li>List 3</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="grid fit">
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">ul</span> <span class="prop">class</span>="<span class="value">inline</span>"&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 1 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 2 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 3 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					<span class="tag">&lt;/<span class="nametag">ul</span>&gt;</span>
+				</code>
+			</div>
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">ol</span> <span class="prop">class</span>="<span class="value">inline</span>"&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 1 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 2 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					&nbsp;&nbsp;<span class="tag">&lt;<span class="nametag">li</span>&gt;</span> List 3 <span class="tag">&lt;/<span class="nametag">li</span>&gt;</span><br>
+					<span class="tag">&lt;/<span class="nametag">ol</span>&gt;</span>
+				</code>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container spacer-large" id="code">
+		<h1><i class="fa fa-code"></i> Code</h1>
+		<p>Basic styling code</p>
+		<br>
+		<h2>Tag Code</h2>
+		<code>.code</code> <code>.tag-code</code> <code class="bg-primary text-white">.custom-tag-code</code>
+		<br>
+		<br>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">code</span>&gt;</span> .tag-code <span class="tag">&lt;/<span class="nametag">code</span>&gt;</span>
+		</code>
+		<br>
+		<h2>Code Block</h2>
+		<div class="spacer-small bg-light pl-small pr-small">
+			<code class="code block">
+				&lt;p&gt; Simple Code Block &lt;/p&gt;
+			</code>
+		</div>
+		<p>No any default for Syntax Colorize, it use monokai color from <a href="https://www.colourlovers.com/palette/1718713/Monokai">https://www.colourlovers.com/palette/1718713/Monokai</a> or you can see the file <mark>external/external.css</mark>.</p>
+		<code class="code block">
+			<span class="tag">&lt;<span class="nametag">code</span> <span class="prop">class</span>="<span class="value">code block</span>"&gt;</span><br>
+			&nbsp;&nbsp; Your code here ... <br>
+			<span class="tag">&lt;/<span class="nametag">code</span>&gt;</span>
+		</code>
+	</div>
+	<hr>
+	<div class="container spacer-large" id="utilities">
+		<h1><i class="fa fa-cogs"></i> Utilities</h1>
+		<p>Help you to use this framework.</p>
+		<br>
+		<h2>Spacer</h2>
+		<p>Spacer adds top and bottom padding according to the class.</p>
+		<br>
+		<div class="grid fit">
+			<div class="set lg-3 md-3">
+				<div class="spacer-small bg-primary align-center text-white">
+					Spacer Small (16px)
+				</div>
+			</div>
+			<div class="set lg-3 md-3">
+				<div class="spacer-medium bg-success align-center text-white">
+					Spacer Medium (32px)
+				</div>
+			</div>
+			<div class="set lg-3 md-3">
+				<div class="spacer-large bg-warning align-center text-white">
+					Spacer Large (64px)
+				</div>
+			</div>
+			<div class="set lg-3 md-3">
+				<div class="spacer-xlarge bg-danger align-center text-white">
+					Spacer Extra Large (128px)
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="grid fit">
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">spacer-small</span>"&gt;</span><br>
+					&nbsp;&nbsp; Spacer Small<br>
+					<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+				</code>
+			</div>
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">spacer-medium</span>"&gt;</span><br>
+					&nbsp;&nbsp; Spacer Medium<br>
+					<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+				</code>
+			</div>
+		</div>
+		<br>
+		<div class="grid fit">
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">spacer-large</span>"&gt;</span><br>
+					&nbsp;&nbsp; Spacer Large<br>
+					<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+				</code>
+			</div>
+			<div class="set lg-6 md-6">
+				<code class="code block">
+					<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">spacer-xlarge</span>"&gt;</span><br>
+					&nbsp;&nbsp; Spacer Extra Large<br>
+					<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+				</code>
+			</div>
+		</div>
+		<br>
+		<h3>Classess</h3>
+		<table class="bordered stripped">
+			<thead>
+				<tr>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.spacer-small</code></td>
+					<td>Adds 16px top and bottom padding</td>
+				</tr>
+				<tr>
+					<td><code>.spacer-medium</code></td>
+					<td>Adds 32px top and bottom padding</td>
+				</tr>
+				<tr>
+					<td><code>.spacer-large</code></td>
+					<td>Adds 64px top and bottom padding</td>
+				</tr>
+				<tr>
+					<td><code>.spacer-xlarge</code></td>
+					<td>Adds 128px top and bottom padding</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h2>Margin and Padding</h2>
+		<p>Add margin and padding to div from 1 until 64 px.</p>
+		<table class="stripped bordered">
+			<thead>
+				<tr>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.mt-*</code></td>
+					<td>Margin Top</td>
+				</tr>
+				<tr>
+					<td><code>.mr-*</code></td>
+					<td>Margin Right</td>
+				</tr>
+				<tr>
+					<td><code>.mb-*</code></td>
+					<td>Margin Bottom</td>
+				</tr>
+				<tr>
+					<td><code>.ml-*</code></td>
+					<td>Margin Left</td>
+				</tr>
+				<tr>
+					<td><code>.pt-*</code></td>
+					<td>Padding Top</td>
+				</tr>
+				<tr>
+					<td><code>.pr-*</code></td>
+					<td>Padding Right</td>
+				</tr>
+				<tr>
+					<td><code>.pb-*</code></td>
+					<td>Padding Bottom</td>
+				</tr>
+				<tr>
+					<td><code>.pl-*</code></td>
+					<td>Padding Left</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h2>Display</h2>
+		<p>Block, Inline, Inline Block</p>
+		<table class="stripped bordered">
+			<thead>
+				<tr>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.d-block</code></td>
+					<td>Display Block</td>
+				</tr>
+				<tr>
+					<td><code>.d-inline-block</code></td>
+					<td>Display Inline Block</td>
+				</tr>
+				<tr>
+					<td><code>.d-inline-block</code></td>
+					<td>Display Inline Block</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<h2>Position</h2>
+		<p>Relative, Absolute, Fixed, Static, Sticky.</p>
+		<table class="stripped bordered">
+			<thead>
+				<tr>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.relative</code></td>
+					<td>Relative Position</td>
+				</tr>
+				<tr>
+					<td><code>.absolute</code></td>
+					<td>Absolute Position</td>
+				</tr>
+				<tr>
+					<td><code>.fixed</code></td>
+					<td>Fixed Position</td>
+				</tr>
+				<tr>
+					<td><code>.static</code></td>
+					<td>Static Position</td>
+				</tr>
+				<tr>
+					<td><code>.sticky</code></td>
+					<td>Sticky Position</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<hr>
+<footer class="container full spacer-medium">
+	<div class="container">
+		<p>Copyright &copy; 2019 <a href="http://github.com/Fahmisyahya/fedoracss">Fedoracss</a></p>
+	</div>
+</footer>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".sidebar-toggle").click(function(){
+			$(".sidebar").toggleClass("show");
+		});
+		if($(".sidebar").hasClass("show")){
+			$(".main").css("margin-left", "200px");
+		}
+	});
+</script>
 </body>
 </html>
