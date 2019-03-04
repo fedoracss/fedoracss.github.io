@@ -1,0 +1,56 @@
+.input
+	width 100%
+	margin 0
+	padding 8px
+	overflow hidden
+	display inline-block
+	border 1px solid #ccc
+	font-family inherit
+	font-size 1rem
+	border-radius 4px
+	&:focus
+		border 1px solid #aaa
+		box-shadow inset 0px 1px 3px 0px rgba(0,0,0,0.12)
+	
+input[type="checkbox"].checkbox
+	appearance none
+	-webkit-appearance none
+	padding 8px
+	position relative
+	display inline-block
+	border 1px solid #ccc
+	border-radius 4px
+	vertical-align middle
+	&:hover
+		cursor pointer
+
+input[type="checkbox"].checkbox:focus
+	 box-shadow inset 0px 1px 3px 0px rgba(0,0,0,0.12)
+
+.checkbox-label
+	font-size 1rem
+	vertical-align middle
+	margin-left 6px
+
+input[type="checkbox"].checkbox:checked:after
+	content '\2714'
+	font-size .875rem
+	position absolute
+	margin-left -5px
+	margin-top -10px
+
+input[type="radio"]
+	vertical-align baseline
+	display inline-block
+
+.group
+	display block
+	width 100%
+	margin-bottom 16px
+	label
+		display block
+		font-weight bold
+		font-size .875rem
+		margin-bottom 4px
+	.input
+		display block

@@ -1,0 +1,55 @@
+.grid:after,
+.grid:before
+	content ""
+	display table
+	clear both
+
+.set
+	float left
+	padding 0 16px
+
+.grid.fit
+	margin-left -16px
+	margin-right -16px
+
+for grid in (1..12)
+	.sm-{grid}, .md-{grid}, .lg-{grid}, .xl-{grid}
+		width 100%
+		margin-bottom 16px
+		display block
+
+@media (min-width 576px)
+	for sm in (1..12)
+		.sm-{sm}
+			width (sm / 12 * 100%)
+	
+	for sm in (1..12)
+		.off-sm-{sm}
+			margin-left (sm / 12 * 100%)
+
+@media (min-width 768px)
+	for md in (1..12)
+		.md-{md}
+			width (md / 12 * 100%)
+	
+	for md in (1..12)
+		.off-md-{md}
+			margin-left (md / 12 * 100%)
+
+@media (min-width 992px)
+	for lg in (1..12)
+		.lg-{lg}
+			width (lg / 12 * 100%)
+	
+	for lg in (1..12)
+		.off-lg-{lg}
+			margin-left (lg / 12 * 100%)
+
+@media (min-width 1200px)
+	for xl in (1..12)
+		.xl-{xl}
+			width (xl / 12 * 100%)
+	
+	for xl in (1..12)
+		.off-xl-{xl}
+			margin-left (xl / 12 * 100%)

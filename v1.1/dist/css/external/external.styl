@@ -1,0 +1,108 @@
+/* sidebar */
+
+.sidebar
+	width 20%
+	height 100%
+	top 0
+	left 0
+	padding 8px 0
+	position fixed
+	background #34495e
+	transition all .2s ease
+	overflow hidden
+	z-index 99999
+	ul.sidebar-menu
+		list-style none
+		margin 0
+		padding 0
+		li
+			float none
+			a
+				display block
+				padding 14px 16px
+				color #bdccdb
+				font-size 1.05rem
+				font-family inherit
+				&:hover
+					background #2c3e50
+					text-decoration none
+					color #ecf0f1
+				label:hover
+					cursor pointer
+
+.hide
+	margin-left -20%
+	
+/* shadow */
+
+.shadow
+	box-shadow 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24)
+
+/* main */
+
+.main
+	width 80%
+	margin-left 20%
+	transition all .2s ease
+	.logo
+		width 300px
+
+@media (max-width 768px)
+	.main
+		.logo
+			width 180px
+
+/* shadow */
+
+.shadow
+	box-shadow 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24)
+
+/* code color */
+
+.nametag
+	color #F92672
+.tag
+	color #FFFFFF
+.value
+	color #FD971F
+.prop
+	color #A6E22E
+
+/* sidebar toggle */
+
+@media (max-width 768px)
+	.sidebar-toggle
+		width 100%
+		display inline-block
+		position fixed
+		width 100%
+		background #fff
+		box-shadow 0px 1px 3px 0px rgba(0, 0, 0, 0.12)
+		z-index 9999
+		height auto
+		label
+			float left
+			display block
+			padding 12px 16px
+			&:hover
+				background #ecf0f1
+				cursor pointer
+
+	.main
+		margin-left 0
+		width 100%
+		padding-top 64px
+		
+	.sidebar-wrapper
+		padding 0 16px
+		
+	.sidebar
+		width 200px
+		margin-top 48px
+		margin-left -200px
+		position fixed
+		overflow auto
+
+.show
+	margin-left 0
+	
