@@ -1,5 +1,9 @@
 ![alt text](https://fedoracss.github.io/dist/fedoracss-logo-lg.png "New Fedoracss Logo")
-## Simple, Minimalis and Responsive CSS Framework
+### Simple, Minimalis and Responsive CSS Framework
+```
+<link rel="stylesheet" href="https://fedoracss.github.io/dist/css/fedora.min.css" type="text/css">
+```
+***
 ### Features (v1.1)
 * Layout (Container & Grid)
 * Button
