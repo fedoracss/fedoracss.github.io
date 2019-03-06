@@ -637,6 +637,11 @@ table {
   width: 100%;
   display: block;
 }
+.btn[disabled],
+.btn.disableds {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .spacer-small {
   padding-top: 16px;
   padding-bottom: 16px;

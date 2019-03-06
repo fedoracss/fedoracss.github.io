@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="x-ua-compatile" content="IE=edge">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="dist/css/fedora.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/fedora.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/external/external.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -44,6 +44,11 @@
 				</div>
 			</div>
 		</header>
+	</div>
+	<div class="bg-danger container full text-white pt-4 pb-4">
+		<div class="container">
+			<p>* Still in development and feature updates will be added in stages.</p>
+		</div>
 	</div>
 	<div class="container full" style="background: #ecf0f1;">
 		<div class="container pt-medium pb-large">
@@ -454,9 +459,16 @@
 			<button class="btn primary sm">Small</button><button class="btn primary">Default</button><button class="btn primary lg">Large</button>
 			<br><br>
 			<code class="code block">
-				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn sm</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">Small</span>&gt;</span><br>
-				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
-				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn lg</span>"&gt;</span> Large <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary sm</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary</span>"&gt;</span> Default <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary lg</span>"&gt;</span> Large <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
+			</code>
+			<br>
+			<h2>Disabled</h2>
+			<button class="btn primary disabled" disabled>Disabled Button</button>
+			<br><br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary</span>" <span class="prop">disabled</span>&gt;</span> Default <span class="tag">&lt;/<span class="nametag">Small</span>&gt;</span>
 			</code>
 		</div>
 	</div>
