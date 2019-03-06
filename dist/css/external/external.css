@@ -108,6 +108,9 @@
     position: fixed;
     overflow: auto;
   }
+  .sidebar ul.sidebar-menu li:last-child {
+    margin-bottom: 64px;
+  }
 }
 .show {
   margin-left: 0;
