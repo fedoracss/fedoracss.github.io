@@ -27,3 +27,29 @@
 
 .stikcy
 	position sticky
+
+.radius-half
+	border-radius 50px
+
+.radius-full
+	border-radius 100px
+
+for rd in (1..100)
+	.radius-{rd}
+		border-radius rd px
+	
+for tl in (1..100)
+	.radius-tl-{tl}
+		border-top-left-radius tl px
+
+for tr in (1..100)
+	.radius-tr-{tr}
+		border-top-right-radius tr px
+		
+for bl in (1..100)
+	.radius-bl-{bl}
+		border-bottom-left-radius bl px
+
+for br in (1..100)
+	.radius-br-{br}
+		border-bottom-right-radius br px

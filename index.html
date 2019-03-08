@@ -10,27 +10,39 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!-- @sidebar-toggle -->
+
 <span class="sidebar-toggle" id="sidebarToggler">
 	<label><i class="fa fa-bars"></i></label>
 </span>
+
+<!-- @sidebar -->
+
 <div class="sidebar-wrapper">
-<aside class="sidebar" id="sidebar">
-	<ul class="sidebar-menu">
-		<li><a href="#"><i class="fa fa-flag"></i> &nbsp; <label>Getting Started</label></a></li>
-		<li><a href="#install"><i class="fa fa-code"></i> &nbsp; <label>Insallation</label></a></li>
-		<li><a href="#container"><i class="fa fa-window-maximize"></i> &nbsp; <label>Container</label></a></li>
-		<li><a href="#grid"><i class="fa fa-th"></i> &nbsp; <label>Grid</label></a></li>
-		<li><a href="#typo"><i class="fa fa-font"></i> &nbsp; <label>Typography</label></a></li>
-		<li><a href="#button"><i class="fa fa-hand-pointer-o"></i> &nbsp; <label>Button</label></a></li> 
-		<li><a href="#form"><i class="fa fa-check-square-o"></i> &nbsp; <label>Form</label></a></li>
-		<li><a href="#table"><i class="fa fa-table"></i> &nbsp; <label>Table</label></a></li>
-		<li><a href="#list"><i class="fa fa-list"></i> &nbsp; <label>List</label></a></li>
-		<li><a href="#code"><i class="fa fa-code"></i> &nbsp; <label>Code</label></a></li>
-		<li><a href="#utilities"><i class="fa fa-cogs"></i> &nbsp; <label>Utilities</label></a></li>
-	</ul>
-</aside>
+	<aside class="sidebar" id="sidebar">
+		<ul class="sidebar-menu">
+			<li><a href="#"><i class="fa fa-flag"></i> &nbsp; <label>Getting Started</label></a></li>
+			<li><a href="#install"><i class="fa fa-code"></i> &nbsp; <label>Insallation</label></a></li>
+			<li><a href="#container"><i class="fa fa-window-maximize"></i> &nbsp; <label>Container</label></a></li>
+			<li><a href="#grid"><i class="fa fa-th"></i> &nbsp; <label>Grid</label></a></li>
+			<li><a href="#typo"><i class="fa fa-font"></i> &nbsp; <label>Typography</label></a></li>
+			<li><a href="#button"><i class="fa fa-hand-pointer-o"></i> &nbsp; <label>Button</label></a></li> 
+			<li><a href="#form"><i class="fa fa-check-square-o"></i> &nbsp; <label>Form</label></a></li>
+			<li><a href="#table"><i class="fa fa-table"></i> &nbsp; <label>Table</label></a></li>
+			<li><a href="#list"><i class="fa fa-list"></i> &nbsp; <label>List</label></a></li>
+			<li><a href="#code"><i class="fa fa-code"></i> &nbsp; <label>Code</label></a></li>
+			<li><a href="#utilities"><i class="fa fa-cogs"></i> &nbsp; <label>Utilities</label></a></li>
+		</ul>
+	</aside>
 </div>
+
+<!-- @main-container -->
+
 <div class="container-full main" id="install">
+
+	<!-- @header-page -->
+
 	<div class="container full">
 		<header class="container header-page pt-large pb-medium">
 			<div class="grid">
@@ -45,11 +57,17 @@
 			</div>
 		</header>
 	</div>
+
+	<!-- @alert -->
+
 	<div class="bg-danger container full text-white pt-4 pb-4">
 		<div class="container">
 			<p>* Still in development and feature updates will be added in stages.</p>
 		</div>
 	</div>
+
+	<!-- @installation -->
+
 	<div class="container full" style="background: #ecf0f1;">
 		<div class="container pt-medium pb-large">
 			<h1><i class="fa fa-code"></i> Installation</h1>
@@ -63,6 +81,9 @@
 			</code>
 		</div>
 	</div>
+
+	<!-- @container -->
+
 	<div class="container full" id="container">
 		<div class="container spacer-large">
 			<h1><i class="fa fa-window-maximize"></i> Container</h1>
@@ -110,6 +131,9 @@
 		</div>
 	</div>
 	<hr>
+
+	<!-- @grid -->
+
 	<div class="container full" id="grid">
 		<div class="container spacer-large">
 			<h1><i class='fa fa-th'></i> Grid</h1>
@@ -170,6 +194,9 @@
 				</tbody>
 			</table>
 			<br>
+
+			<!-- @grid-example -->
+
 			<h2>Grid</h2>
 			<p>Resize the page to see effect.</p>
 			<div class="grid text-white">
@@ -218,6 +245,9 @@
 				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
 			</code>
 			<br>
+
+			<!-- @offset -->
+
 			<h2>Offset</h2>
 			<p>Push the column to the right. When the screen size changes, the offset will change according to the class offset. If in a column there is only 1 class of offset (for example only off-lg-*) then if the screen size changes to medium or lower, the offset will disappear.</p>
 			<p>Resize to see effect.</p>
@@ -262,6 +292,9 @@
 				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
 			</code>
 			<br>
+
+			<!-- @fit-class -->
+
 			<h2>Fit Class</h2>
 			<p>When you use grid inside the container, it's looks like below. There's padding on left and right. So, to remove it, use the <b>fit</b> <code>.fit</code> class. <code>.fit</code> class is pull left and right grid padding.
 			</p>
@@ -316,10 +349,15 @@
 		</div>
 	</div>
 	<hr>
+
+	<!-- @typography -->
+
 	<div class="container full spacer-large" id="typo">
 		<div class="container">
-		<h1><i class="fa fa-font"></i> Typography</h1>
-		<p>Heading, Formatting and Alignment.</p>
+			<header>
+				<h1><i class="fa fa-font"></i> Typography</h1>
+				<p>Heading, Formatting and Alignment.</p>
+			</header>
 		<br>
 		<h2>Heading</h2>
 		<div class="container full bg-light pt-2 pb-2 pl-small pr-small">
@@ -340,6 +378,9 @@
 			<span class="tag">&lt;<span class="nametag">h6</span>&gt;</span> Heading 6 <span class="tag">&lt;/<span class="nametag">h6</span>&gt;</span><br>
 		</code>
 		<br>
+
+		<!-- @alignment -->
+
 		<h2>Alignment</h2>
 		<div class="container full bg-light pt-2 pb-2 pl-small pr-small">
 			<p class="align-left">Text align left</p>
@@ -360,6 +401,9 @@
 			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">justify</span>"&gt;</span> Lorem ... laborum.<span class="tag">&lt;/<span class="nametag">p</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @text-decoration -->
+
 		<h2>Text Decoration</h2>
 		<div class="pt-2 pb-2 pl-small pr-small bg-light">
 			<p class="underline">Underlined Text</p>
@@ -375,6 +419,9 @@
 			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">decor-none</span>"&gt;</span> No Text Decoration <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @text-transform -->
+
 		<h2>Text Transform</h2>
 		<div class="pt-2 pb-2 pl-small pr-small bg-light">
 			<p class="upper">Uppercase Text</p>
@@ -388,6 +435,9 @@
 			<span class="tag">&lt;<span class="nametag">p</span> <span class="prop">class</span>="<span class="value">capital</span>"&gt;</span> Capitalize Text <span class="tag">&lt;/<span class="nametag">p</span>&gt;</span><br>
 		</code>
 		<br>
+
+		<!-- @text-decoration -->
+
 		<h2>Text Direction</h2>
 		<div class="pt-2 pb-2 pl-small pr-small bg-light">
 			<p>default of text direction is left ro right.</p>
@@ -399,6 +449,9 @@
 		</code>
 	</div>
 </div>
+	
+	<!-- @button -->
+
 	<hr>
 	<div class="container full spacer-large" id="button">
 		<div class="container">
@@ -415,6 +468,9 @@
 				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
 			</code>
 			<br>
+
+			<!-- @block-button -->
+
 			<h2>Block Button</h2>
 			<p>If on other framework <b>Block Button</b> is Full Width Button, in <b>fedoracss</b> block button is button with block display (stuck).</p>
 			<button class="btn block">Default Block</button>
@@ -430,6 +486,9 @@
 				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success block</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span>
 			</code>
 			<br>
+
+			<!-- @button-fullwidth -->
+
 			<h2>Full Width Button</h2>
 			<button class="btn full-width">Default Block</button>
 			<button class="btn primary full-width">Primary Block</button>
@@ -444,6 +503,9 @@
 				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success full-width</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span>
 			</code>
 			<br>
+
+			<!-- @button-outline -->
+
 			<h2>Outline Button</h2>
 			<button class="btn outline">Default Outline</button>
 			<button class="btn primary outline">Primary Outline</button>
@@ -459,6 +521,9 @@
 				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn success outline</span>"&gt;</span> Success <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span>
 			</code>
 			<br>
+
+			<!-- @button-sizing -->
+
 			<h2>Sizing</h2>
 			<button class="btn primary sm">Small</button><button class="btn primary">Default</button><button class="btn primary lg">Large</button>
 			<br><br>
@@ -468,6 +533,9 @@
 				<span class="tag">&lt;<span class="nametag">button</span> <span class="prop">class</span>="<span class="value">btn primary lg</span>"&gt;</span> Large <span class="tag">&lt;/<span class="nametag">button</span>&gt;</span><br>
 			</code>
 			<br>
+
+			<!-- @button-disabled -->
+
 			<h2>Disabled</h2>
 			<button class="btn primary disabled" disabled>Disabled Button</button>
 			<br><br>
@@ -477,6 +545,9 @@
 		</div>
 	</div>
 	<hr>
+
+	<!-- @form -->
+
 	<div class="container full spacer-large" id="form">
 		<div class="container">
 		<h1><i class="fa fa-check-square-o"></i> Form</h1>
@@ -514,6 +585,9 @@
 			<span class="tag">&lt;/<span class="nametag">form</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @input-basic -->
+
 		<h2>Basic Input</h2> 
 		<div class="spacer-small pl-small pr-small bg-light">
 			<input type="text" class="input">
@@ -523,6 +597,9 @@
 			<span class="tag">&lt;<span class="nametag">input</span> <span class="prop">type</span>="<span class="value">text</span>" <span class="prop">class</span>="<span class="value">input</span>"&gt;</span>
 		</code>
 		<br>
+
+		<!-- @input-select -->
+
 		<h2>Select Input</h2>
 		<div class="spacer-small pl-small pr-small bg-light">
 			<select class="input">
@@ -540,6 +617,9 @@
 			<span class="tag">&lt;/<span class="nametag">select</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @input-checkbox -->
+
 		<h2>Checkbox</h2>
 		<div class="container full bg-light spacer-small pl-small pr-small">
 			<input type="checkbox" class="checkbox" id="myCheck"><label class="checkbox-label" for="myCheck">Check it</label>
@@ -550,6 +630,9 @@
 			<span class="tag">&lt;<span class="nametag">label</span> <span class="prop">class</span>="<span class="value">checkbox-label</span>"&gt;</span> Check it <span class="tag">&lt;/<span class="nametag">label</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @input-radio -->
+
 		<h2>Radio Button</h2>
 		<div class="spacer-small pl-small pr-small bg-light">
 			<input type="radio"> Check it
@@ -567,6 +650,9 @@
 		</code>
 	</div>
 </div>
+
+	<!-- @table -->
+
 	<hr>
 	<div class="container full spacer-large" id="table">
 		<div class="container">
@@ -621,6 +707,9 @@
 		</code>
 		<p><b>Always use <code>thead</code> and <code>tbody</code> when make table</b></p>
 		<br>
+
+		<!-- @table-stripped -->
+
 		<h2>Stripped Table</h2>
 		<p><code>.stripped</code> class is use to create zebra-striping table.</p>
 		<div class="container full spacer-small pl-small pr-small bg-light">
@@ -671,6 +760,9 @@
 			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @table-bordered -->
+
 		<h2>Bordered Table</h2>
 		<p><code>.bordered</code> is use to add outside border to the table.</p>
 		<div class="container full spacer-small pl-small pr-small bg-light">
@@ -721,6 +813,9 @@
 			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @table-bordered-all -->
+
 		<h2>Bordered All Table</h2>
 		<p><code>.bordered-all</code> is use to add outside and inside border to the table.</p>
 		<div class="container full spacer-small pl-small pr-small bg-light">
@@ -771,6 +866,9 @@
 			<span class="tag">&lt;/<span class="nametag">table</span>&gt;</span>
 		</code>
 		<br>
+
+		<!-- @table-borderless -->
+
 		<h2>Borderless Table</h2>
 		<p><code>.bordered</code> is use to remove outside border to the table.</p>
 		<div class="container full spacer-small pl-small pr-small bg-light">
@@ -823,6 +921,9 @@
 	</div>
 </div>
 	<hr>
+
+	<!-- list -->
+
 	<div class="container full spacer-large" id="list">
 		<div class="container">
 		<h1><i class="fa fa-list"></i> List</h1>
@@ -867,6 +968,9 @@
 			</div>
 		</div>
 		<br>
+
+		<!-- @list-inline -->
+
 		<h2>Inline List</h2>
 		<div class="spacer-small pl-small pr-small bg-light">
 			<div class="grid">
@@ -909,6 +1013,9 @@
 		</div>
 	</div>
 	<hr>
+
+	<!-- @code -->
+
 	<div class="container spacer-large" id="code">
 		<h1><i class="fa fa-code"></i> Code</h1>
 		<p>Basic styling code</p>
@@ -935,10 +1042,16 @@
 		</code>
 	</div>
 	<hr>
+
+	<!-- @outilities -->
+
 	<div class="container spacer-large" id="utilities">
 		<h1><i class="fa fa-cogs"></i> Utilities</h1>
 		<p>Help you to use this framework.</p>
 		<br>
+
+		<!-- @spacer -->
+
 		<h2>Spacer</h2>
 		<p>Spacer adds top and bottom padding according to the class.</p>
 		<br>
@@ -1027,6 +1140,9 @@
 			</tbody>
 		</table>
 		<br>
+
+		<!-- @margin & @padding -->
+
 		<h2>Margin and Padding</h2>
 		<p>Add margin and padding to div from 1 until 64 px.</p>
 		<table class="stripped bordered">
@@ -1112,6 +1228,9 @@
 			</tbody>
 		</table>
 		<br>
+
+		<!-- @display -->
+
 		<h2>Display</h2>
 		<p>Block, Inline, Inline Block</p>
 		<table class="stripped bordered">
@@ -1137,6 +1256,9 @@
 			</tbody>
 		</table>
 		<br>
+
+		<!-- @position -->
+
 		<h2>Position</h2>
 		<p>Relative, Absolute, Fixed, Static, Sticky.</p>
 		<table class="stripped bordered">
@@ -1166,6 +1288,75 @@
 				<tr>
 					<td><code>.sticky</code></td>
 					<td>Sticky Position</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- @radius -->
+		<br>
+		<h2>Radius</h2>
+		<p>Radius half and Radius full</p>
+		<div class="grid fit">
+			<div class="set lg-6 md-6 sm-6">
+				<div class="spacer-small pl-16 pr-16 bg-primary radius-half">
+					<h3>Radius Half</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="set lg-6 md-6 sm-6">
+				<div class="spacer-small pl-16 pr-16 bg-success radius-full">
+					<h3>Radius Full</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+		<p>Or you can use border radius from 1 until 100 px with use <code>radius-*</code> class.</p>
+		<h3>Classes</h3>
+		<table class="stripped bordered">
+			<thead>
+				<tr>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.radius-*</code></td>
+					<td>Define border radius</td>
+				</tr>
+				<tr>
+					<td><code>.radius-half</code></td>
+					<td>Define 50px border radius</td>
+				</tr>
+				<tr>
+					<td><code>.radius-full</code></td>
+					<td>Define 100px border radius</td>
+				</tr>
+				<tr>
+					<td><code>.radius-tl-*</code></td>
+					<td>Define top left radius</td>
+				</tr>
+				<tr>
+					<td><code>.radius-tr-*</code></td>
+					<td>Define top right radius</td>
+				</tr>
+				<tr>
+					<td><code>.radius-bl-*</code></td>
+					<td>Define bottom left radius</td>
+				</tr>
+				<tr>
+					<td><code>.radius-br-*</code></td>
+					<td>Define bottom right radius</td>
 				</tr>
 			</tbody>
 		</table>
