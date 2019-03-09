@@ -15,7 +15,6 @@
 for grid in (1..12)
 	.sm-{grid}, .md-{grid}, .lg-{grid}, .xl-{grid}
 		width 100%
-		margin-bottom 16px
 		display block
 
 @media (min-width 576px)
@@ -53,3 +52,10 @@ for grid in (1..12)
 	for xl in (1..12)
 		.off-xl-{xl}
 			margin-left (xl / 12 * 100%)
+
+@media (max-width 576px)
+	for grid in (1..12)
+		.sm-{grid}, .md-{grid}, .lg-{grid}, .xl-{grid}
+			width 100%
+			display block
+			margin-bottom 16px
