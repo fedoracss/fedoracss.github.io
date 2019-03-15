@@ -22,11 +22,12 @@
 <div class="sidebar-wrapper">
 	<aside class="sidebar" id="sidebar">
 		<ul class="sidebar-menu">
-			<li><a href="#"><i class="fa fa-flag"></i> &nbsp; <label>Getting Started</label></a></li>
+			<li><a href="index.html"><i class="fa fa-flag"></i> &nbsp; <label>Getting Started</label></a></li>
 			<li><a href="#install"><i class="fa fa-code"></i> &nbsp; <label>Insallation</label></a></li>
 			<li><a href="#container"><i class="fa fa-window-maximize"></i> &nbsp; <label>Container</label></a></li>
 			<li><a href="#grid"><i class="fa fa-th"></i> &nbsp; <label>Grid</label></a></li>
 			<li><a href="#typo"><i class="fa fa-font"></i> &nbsp; <label>Typography</label></a></li>
+			<li><a href="#color"><i class="fa fa-paint-brush"></i> &nbsp; <label>Color</label></a></li>
 			<li><a href="#button"><i class="fa fa-hand-pointer-o"></i> &nbsp; <label>Button</label></a></li> 
 			<li><a href="#form"><i class="fa fa-check-square-o"></i> &nbsp; <label>Form</label></a></li>
 			<li><a href="#table"><i class="fa fa-table"></i> &nbsp; <label>Table</label></a></li>
@@ -449,6 +450,137 @@
 		</code>
 	</div>
 </div>
+
+	<!-- @color -->
+	<hr>
+	<div class="container full spacer-large" id="color">
+		<div class="container">
+			<h1><i class="fa fa-paint-brush"></i> Color</h1>
+			<p>Coloring text and background.</p>
+			<br>
+			<div class="grid">
+				<div class="set xl-3 md-3 sm-3 bg-primary text-white spacer-small pl-16 pr-16">
+					Primary
+				</div>
+				<div class="set xl-3 md-3 sm-3 bg-success text-white spacer-small pl-16 pr-16">
+					Success
+				</div>
+				<div class="set xl-3 md-3 sm-3 bg-warning text-white spacer-small pl-16 pr-16">
+					Warning
+				</div>
+				<div class="set xl-3 md-3 sm-3 bg-danger text-white spacer-small pl-16 pr-16">
+					Danger
+				</div>
+			</div>
+			<div class="grid">
+				<div class="set xl-3 md-3 sm-3 bg-white text-black spacer-small pl-16 pr-16">
+					White and Black
+				</div>
+				<div class="set xl-3 md-3 sm-3 bg-black text-white spacer-small pl-16 pr-16">
+					Black and White
+				</div>
+				<div class="set xl-3 md-3 sm-3 bg-dark text-white spacer-small pl-16 pr-16">
+					Dark
+				</div>
+				<div class="set xl-3 md-3 sm-3 bg-light text-dark spacer-small pl-16 pr-16">
+					Light
+				</div>
+			</div>
+			<br>
+			<code class="code block">
+				<span class="tag">&lt;<span class="nametag">div</span> <span class="prop">class</span>="<span class="value">bg-primary text-white</span>"</span>&gt;<br>
+				&nbsp;&nbsp;Primary background and White text<br>
+				<span class="tag">&lt;/<span class="nametag">div</span>&gt;</span>
+			</code>
+			<br>
+			<h2>Background</h2>
+			<table class="stripped bordered">
+				<thead>
+					<tr>
+						<th>Class</th>
+						<th>Color</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>.bg-primary</code></td>
+						<td class="bg-primary"></td>
+					</tr>
+					<tr>
+						<td><code>.bg-sucess</code></td>
+						<td class="bg-success"></td>
+					</tr>
+					<tr>
+						<td><code>.bg-warning</code></td>
+						<td class="bg-warning"></td>
+					</tr>
+					<tr>
+						<td><code>.bg-danger</code></td>
+						<td class="bg-danger"></td>
+					</tr>
+					<tr>
+						<td><code>.bg-dark</code></td>
+						<td class="bg-dark"></td>
+					</tr>
+					<tr>
+						<td><code>.bg-light</code></td>
+						<td class="bg-light"></td>
+					</tr>
+					<tr>
+						<td><code>.bg-white</code></td>
+						<td class="bg-white"><small>It's white background actually</small></td>
+					</tr>
+					<tr>
+						<td><code>.bg-black</code></td>
+						<td class="bg-black"></td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>Text Color</h2>
+			<table class="stripped bordered">
+				<thead>
+					<tr>
+						<th>Class</th>
+						<th>Color</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>.text-primary</code></td>
+						<td class="text-primary">Primary Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-sucess</code></td>
+						<td class="text-success">Success Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-warning</code></td>
+						<td class="text-warning">Warning Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-danger</code></td>
+						<td class="text-danger">Danger Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-dark</code></td>
+						<td class="text-dark">Dark Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-light</code></td>
+						<td class="text-light">Light Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-white</code></td>
+						<td class="text-white bg-black">White Text</td>
+					</tr>
+					<tr>
+						<td><code>.text-black</code></td>
+						<td class="text-black">Black Text</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 	
 	<!-- @button -->
 
@@ -1378,6 +1510,7 @@
 		if($(".sidebar").hasClass("show")){
 			$(".main").css("margin-left", "200px");
 		}
+		$("#sidebar").load("comps/navbar.html")
 	});
 </script>
 </body>
