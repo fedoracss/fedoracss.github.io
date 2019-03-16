@@ -73,7 +73,7 @@
   color: #a6e22e;
 }
 /* sidebar toggle */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .sidebar-toggle {
     width: 100%;
     display: inline-block;
@@ -106,7 +106,7 @@
     margin-top: 48px;
     margin-left: -200px;
     position: fixed;
-    overflow: auto;
+    overflow: scroll;
   }
   .sidebar ul.sidebar-menu li:last-child {
     margin-bottom: 64px;
